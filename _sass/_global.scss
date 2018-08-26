@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 100%; // 1rem ~ 16px
+  position: relative;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: 'Poppins', Verdana, sans-serif;
+}
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.blue-bg {
+  background: rgba(75,0,130,0.2);
+}

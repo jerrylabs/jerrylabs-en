@@ -1,0 +1,34 @@
+
+
+footer {
+  color: white;
+  padding: 0.625rem 0;
+  background-color: MidnightBlue;
+  background-image: linear-gradient(to right bottom, #4C0082 0%, #191970 100%);
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+footer a, footer a:hover {
+  color: LightPink;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border-bottom: 1px dashed LightPink;
+}
+
+.copy-left {
+  display: inline-block;
+  text-align: right;
+  margin: 0px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: “FlipH”;
+}
