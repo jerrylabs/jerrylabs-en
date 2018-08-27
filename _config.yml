@@ -17,7 +17,6 @@ title: "JerryLabs - Ing. Jaroslav Kameň"
 email: jerry@jerrylabs.cz
 description: >- # this means to ignore newlines until "baseurl:"
   Webový vývoj a herní design
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.jerrylabs.cz" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jerrylabs
 github_username:  jerrylabs
