@@ -1,6 +1,6 @@
 
 .jumbotron {
-  background: transparent url('/assets/images/jumbotron.jpg') center center no-repeat scroll;
+  background: transparent url("{{'/assets/images/jumbotron.jpg' | relative_url }}") center center no-repeat scroll;
   height: 300px;
 }
 
