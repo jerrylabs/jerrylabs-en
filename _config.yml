@@ -24,6 +24,11 @@ github_username:  jerrylabs
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
 sass:
     style: compressed
 
