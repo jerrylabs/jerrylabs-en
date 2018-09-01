@@ -33,7 +33,11 @@ section {
 }
 
 h2 {
-  margin: 0 1.5rem 0;
+  margin: 0 0 1.5rem;
+}
+
+ul {
+  margin: 0;
 }
 
 .hidden {
@@ -46,4 +50,20 @@ h2 {
 
 .blue-bg {
   background: rgba(75,0,130,0.2);
+}
+
+.center {
+  text-align: center;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+p {
+  max-width: 40rem;
+
+  .center & {
+    margin: 0 auto 1rem;
+  }
 }
