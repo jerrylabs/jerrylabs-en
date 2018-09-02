@@ -47,8 +47,12 @@
   flex-wrap: wrap;
 }
 
-.contact__address, .contact__photo {
+.contact__address {
   margin-right: 2rem;
+
+  p {
+    margin-bottom: 2rem;
+  }
 }
 
 .contact__social {
@@ -74,4 +78,19 @@
   height: 16rem;
   width: auto;
   border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .contact__address {
+    order: 1;
+  }
+  .contact__social {
+    order: 3;
+    flex: 1 0 100%;
+    max-width: none;
+  }
+  .contact__photo {
+    order: 2;
+    height: 12.5rem;
+  }
 }
