@@ -1,7 +1,20 @@
+	@keyframes zoomy {
+		0% { transform: scale(1); }
+		10% { transform: scale(1); }
+		90% { transform: scale(1.1); }
+		100% { transform: scale(1.1); }
+	}
 
 .jumbotron {
   background: transparent url('../images/jumbotron.jpg') center center no-repeat scroll;
   height: 300px;
+  background-size: cover;
+  background-position: center;		
+  animation-name: zoomy;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .jumbotron h1 {
