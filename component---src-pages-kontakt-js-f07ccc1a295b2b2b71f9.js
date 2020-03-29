@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{IDOG:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),r=a.n(n),i=a("Bl7J");t.default=function(){return r.a.createElement(i.a,null,r.a.createElement("div",{className:"container"},r.a.createElement("iframe",{src:"https://docs.google.com/forms/d/e/1FAIpQLScsmoXQKKGRzHvJiFbxE4fwICU_ytvjRLFGVsyHyD9aic4Qtg/viewform?embedded=true",width:"640",height:"677",frameborder:"0",marginheight:"0",marginwidth:"0"},"Načítání…")))}}}]);
+//# sourceMappingURL=component---src-pages-kontakt-js-f07ccc1a295b2b2b71f9.js.map
