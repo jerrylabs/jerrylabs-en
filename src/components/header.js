@@ -34,13 +34,11 @@ export default () => {
                 <span>Kontakt</span>
               </Link>
             </li>
-            {/*
             <li>
-              <a href="http://jerrylabsgames.com" title="English version">
+              <a href="http://jerrylabsgames.com" title="English version" class="localization">
                 <img src="/images/uk_flag.svg" alt="English version" />
               </a>
             </li>
-             */}
           </ul>
         </nav>
         <button onClick={() => expand(!expanded)} className="mobile-menu-icon">
