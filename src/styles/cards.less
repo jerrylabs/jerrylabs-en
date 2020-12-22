@@ -44,14 +44,19 @@
   .card__content { padding: 1rem; padding-left: calc(38% + 1rem); }
 }
 
-.card.comingSoon {
+.card.label {
   position: relative;
   &::before {
-    display: block; content: "P\159ipravujeme"; text-transform: uppercase;
-    color: white; background: DarkRed; position: absolute; top: 2rem; left: -3.5rem;
-    transform: rotate(-45deg); padding: 0.1rem 3rem;
+    display: block; text-transform: uppercase;
+    color: white; position: absolute;
+    top: 0; left: 2.8rem;
+    transform: translate(-50%, 2rem) rotate(-45deg);
+    padding: 0.1rem 3rem;
   }
+  &.comingSoon::before { content: "P\159ipravujeme"; background: DarkRed; }
+  &.new::before { content: "Novinka";  background: DarkGreen; }
 }
+
 
 .card--quarter { flex: 1 1 calc(25% - 2rem); }
 .card--third { flex: 0 1 calc(33.3% - 2rem); }

@@ -16,7 +16,7 @@ export default () => {
       <div className="container cards small">
          {games.map((game, i) => (
           <Link key={i}
-            className={`card card--horizontal card--full${game.codeName === 'circus' ? ' comingSoon' : ''}`}
+            className={`card card--horizontal card--full${game.codeName === 'circus' ? ' label new' : ''}`}
            to={`/hry/${game.codeName}`} title={game.title}
           >
             <div className="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
