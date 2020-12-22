@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Cyborg Mutant Zombie Circus",
+    "codeName": "circus",
+    "players": "2–6",
+    "time": "30–60 minut",
+    "age": "od 15 let",
+    "publishYear": "2020",
+    "endorsement": "Nejslavnější meziplanetární reality show budoucnosti! Získejte přízeň fanoušků po celé Galaxii překonáváním nástrah v bláznivém, ale smrtonosném labyrintu.",
+    "description": "Karetní kompetetivní sci-fi dystopický RPG dungeon survival - reality show simulátor plný absurdního humoru. Váš cíl je se jako vyřazený robot či nepovedený mutant stát plnoprávným člověkem.",
+    "tags": ["kompetetivní", "sci-fi", "rpg", "survival", "dystopická", "humor"],
+    "images": ["cmzcl2.jpg", "creating.jpg", "playtest.jpg", "updatedcards.png"]
+  }, {
+    "title": "Gangsterburg",
+    "codeName": "gangsterburg",
+    "players": "2–5",
+    "time": "90-120 minut",
+    "age": "od 18 let",
+    "publishYear": "2013",
+    "endorsement": "Ovládni jako hlava mafiánské rodiny hospody, kasína, hampejzy a nakonec celé zkorumpované město Gangsterburg - semeniště kriminálníků a podvratných živlů.",
+    "description": "Desková budovatelská „obíhačka“, ve které hráči nakupují podniky šedé ekonomiky. Jejich prostřednictvím pak naplňují potřeby význačných veřejných činitelů za účelem ovládnutí města.",
+    "tags": ["kompetitivní", "budovatelská", "gangsterka", "mafie"]
+  }, {
+    "title": "Super Trooper",
+    "codeName": "supertrooper",
+    "players": "2–6",
+    "time": "20–60 minut",
+    "age": "od 13 let",
+    "publishYear": "2011",
+    "endorsement": "Jako jeden z posledních svobodných warlordů ubraň svou zemi před nájezdníky a megakorporacemi. Kopírovatelný remake legendární karetní hry Doomtrooper.",
+    "description": "Kopírovatelná alternativa sběratelské karetní hry Doomtrooper. Poměřte sílu s armádami ostatních hráčů! K dispozici máme tři páry předchystaných balíčků pro duel.",
+    "tags": ["kompetetivní", "sci-fi", "bitevní", "strategická", "deck building"],
+    "extLinks": {
+      "bgg": "https://boardgamegeek.com/boardgame/144893/super-trooper",
+      "zatrolene": "https://www.zatrolene-hry.cz/spolecenska-hra/super-trooper-3617/"
+    }
+  }
+]
