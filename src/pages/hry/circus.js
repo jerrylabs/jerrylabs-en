@@ -42,7 +42,7 @@ export default () => {
           </p>
           <h2>Poděkování</h2>
           <p>
-            Za testování a&nbsp;feedback, díky kterému vděčí Cyborg Mutant Zombie Circus své současné podobě, děkujeme Jolance, Web Pro týmu, České deskoherní společnosti a&nbsp;všem ostatním, kteří se na něm podíleli. Autorem finálních ilustrací a&nbsp;designu karet je Ondřej Šulák.
+            Za testování a&nbsp;feedback, díky kterému vděčí Cyborg Mutant Zombie Circus své současné podobě, děkujeme Jolance, Web Pro týmu, České deskoherní společnosti a&nbsp;všem ostatním, kteří se na něm podíleli. Autorem většiny finálních ilustrací a&nbsp;designu karet je Ondřej Šulák.
           </p>
         </div>
       </section>
