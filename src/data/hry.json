@@ -9,7 +9,8 @@
     "endorsement": "Nejslavnější meziplanetární reality show budoucnosti! Získejte přízeň fanoušků po celé Galaxii překonáváním nástrah v bláznivém, ale smrtonosném labyrintu.",
     "description": "Karetní kompetetivní sci-fi dystopický RPG dungeon survival - reality show simulátor plný absurdního humoru. Váš cíl je se jako vyřazený robot či nepovedený mutant stát plnoprávným člověkem.",
     "tags": ["kompetetivní", "sci-fi", "rpg", "survival", "dystopická", "humor"],
-    "images": ["cmzcl2.jpg", "creating.jpg", "playtest.jpg", "updatedcards.png"]
+    "images": ["circus001.jpg", "circus002.jpg", "circus003.jpg", "circus004.jpg", "circus005.jpg", "circus006.jpg", "circus007.jpg", "circus008.jpg"],
+    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332152/cyborg-mutant-zombie-circus"}
   }, {
     "title": "Gangsterburg",
     "codeName": "gangsterburg",
@@ -19,7 +20,8 @@
     "publishYear": "2013",
     "endorsement": "Ovládni jako hlava mafiánské rodiny hospody, kasína, hampejzy a nakonec celé zkorumpované město Gangsterburg - semeniště kriminálníků a podvratných živlů.",
     "description": "Desková budovatelská „obíhačka“, ve které hráči nakupují podniky šedé ekonomiky. Jejich prostřednictvím pak naplňují potřeby význačných veřejných činitelů za účelem ovládnutí města.",
-    "tags": ["kompetitivní", "budovatelská", "gangsterka", "mafie"]
+    "tags": ["kompetitivní", "budovatelská", "gangsterka", "mafie"],
+    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332154/gangsterburg"}
   }, {
     "title": "Super Trooper",
     "codeName": "supertrooper",
