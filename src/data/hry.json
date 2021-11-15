@@ -10,7 +10,20 @@
     "description": "Karetní kompetetivní sci-fi dystopický RPG dungeon survival - reality show simulátor plný absurdního humoru. Váš cíl je se jako vyřazený robot či nepovedený mutant stát plnoprávným člověkem.",
     "tags": ["kompetetivní", "sci-fi", "rpg", "survival", "dystopická", "humor"],
     "images": ["circus001.jpg", "circus002.jpg", "circus003.jpg", "circus004.jpg", "circus005.jpg", "circus006.jpg", "circus007.jpg", "circus008.jpg"],
-    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332152/cyborg-mutant-zombie-circus"}
+    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332152/cyborg-mutant-zombie-circus"},
+    "status": "new"
+  }, {
+    "title": "Kraď to auto!",
+    "codeName": "kta",
+    "players": "2–6",
+    "time": "20–40 minut",
+    "age": "od 15 let",
+    "publishYear": "2021",
+    "endorsement": "Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!",
+    "description": "Akční/strategická karetní hra mapující život \"obchodníka\" s automobily ve městě Gangsterburg. Plň kšefty od rozvozu pizzy až po přepadení banky a bacha na policajty!",
+    "tags": ["kompetetivní", "akční", "gangsterka", "mafie"],
+    "images": ["betajulietta.png", "btw.png", "frnd.png", "kakia.png", "morshe.png", "vulvo.png"],
+    "status": "comingSoon"
   }, {
     "title": "Gangsterburg",
     "codeName": "gangsterburg",

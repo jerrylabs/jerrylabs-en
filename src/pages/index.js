@@ -58,7 +58,7 @@ export default () => {
         <div className="container cards">
           {games.slice(0, 3).map((game, i) => (
             <a key={i}
-              className={`card card--horizontal card--half${game.codeName === 'circus' ? ' label new' : ''}`}
+              className={`card card--horizontal card--half${game?.status ? ` label ${game.status}` : ''}`}
               data-attribute="SRL" href={`/hry/${game.codeName}`} title={game.title}
             >
               <div className="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />

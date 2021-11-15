@@ -25,7 +25,7 @@ export default () => {
               <img className="card__image" src={web.image} alt={`${web.title} (${web.year})`} />
               <div className="card__content">
                 <h3 className="card__title">{web.title}</h3>
-                <div className="card__description">{web.year}</div>
+                {/* <div className="card__description">{web.year}</div> */}
               </div>
             </a>
           ))}
