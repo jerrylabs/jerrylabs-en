@@ -21,12 +21,9 @@ export default () => {
           </p>
           <div className="game__download-wrap">
             <a href="/games/circus.zip" className="button button--download">Stáhnout hru</a>
+            <a href="/order" className="button button--order">Objednat výrobu</a>
           </div>
-          {/*
-          <div className="game__download-wrap">
-            <a href="#" className="button button--download">Stáhnout oboustranně</a>
-          </div>
-          */}
+
           <Support />
         </div>
         <GameInfo game={currGame} />
