@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import {Link} from 'gatsby'
 import Layout from '../../components/layout'
 import Jumbotron from '../../components/jumbotron'
@@ -10,22 +11,23 @@ export default () => {
   const currGame = games.find(game => game.codeName === 'kta')
   return (
     <Layout className="game">
-      <Jumbotron title={currGame.title} className="home zoomy" image="beton" />
+      <Helmet>
+        <meta property="og:title" content="KTA: Kraď to auto!" />
+        <meta property="og:url" content="https://www.jerrylabs.cz/hry/kta" />
+        <meta property="og:image" content="https://www.jerrylabs.cz/images/kta.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Karetní hra ke stažení a tisku. Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!" />
+      </Helmet>
+      <Jumbotron title={currGame.title} className="home zoomy" image="kta-game" />
       <div className="container game__panel">
         <div className="game__download">
           <p className="big">
-            Přestřelky, krádeže aut, honičky s policajty a destruction derby, to vše zažijete v nově připravované karetní hře Kraď to auto!
-            {/* Dvě varianty ZIP archivů (20 MB) obsahuje jednostranné i oboustranné verze karet v PDF, návod k vytištění a pravidla hry. */}
-            {/* Ke hře jsou potřeba kostky nebo <a href="https://bit.ly/circusdice" target="_blank" rel="noopener noreferer">aplikace</a>. */}
+            Hra je volně ke stažení a vytištění na základě <Link to="/licence/">licence Creative Commons</Link>.
+            ZIP archiv (23 MB) obsahuje pravidla a PDF s kartami a žetonky.
           </p>
-          {/* <div className="game__download-wrap">
-            <a href="/games/circus.zip" className="button button--download">Stáhnout hru</a>
-          </div> */}
-          {/*
           <div className="game__download-wrap">
-            <a href="#" className="button button--download">Stáhnout oboustranně</a>
+            <a href="/games/kta.zip" className="button button--download">Stáhnout hru</a>
           </div>
-          */}
           <Support />
         </div>
         <GameInfo game={currGame} />
@@ -34,14 +36,14 @@ export default () => {
         <div className="container">
           <h2>Více o hře</h2>
           <p>
-            Kraď to auto! je sonda do automobilového průmyslu a "obchodu" ve starém dobrém Gangsterburgu. Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!
+          Přestřelky, krádeže aut, honičky s policajty a destruction derby, to vše zažijete v nové karetní hře Kraď to auto!
           </p>
           <p>
-            Kraď to auto! obsahuje dva herní módy: akční pro rychlý a adrenalinový zážitek a strategický pro milovníky intrik a matení nepřítele.
+            Kraď to auto! je sonda do automobilového průmyslu a "obchodu" ve starém dobrém Gangsterburgu. Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!
           </p>
           <h2>Poděkování</h2>
           <p>
-            Děkujeme Rockstar games za inspiraci, Béďovi za společné zážitky v Anywhere City a Jolance za motivaci a podporu.
+            Děkujeme Rockstar games za inspiraci, Béďovi za společné zážitky z Anywhere City, Vlastičovi a Jaroušovi za testing a feedback, Jolance za motivaci a podporu a všem dalším, kteří se podíleli na výsledné podobě hry.
           </p>
         </div>
       </section>

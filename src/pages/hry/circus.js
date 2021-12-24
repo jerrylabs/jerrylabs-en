@@ -14,7 +14,7 @@ export default () => {
       <div className="container game__panel">
         <div className="game__download">
           <p className="big">
-            Zábavná karetní hra volně ke stažení a vytištění na základě <Link to="/licence/">Creative Commons license</Link>.
+            Zábavná karetní hra volně ke stažení a vytištění na základě <Link to="/licence/">licence Creative Commons</Link>.
             ZIP archiv (42 MB) obsahuje dvě PDF s kartami, návod k vytištění a pravidla hry.
             {/* Dvě varianty ZIP archivů (20 MB) obsahuje jednostranné i oboustranné verze karet v PDF, návod k vytištění a pravidla hry. */}
             {/* Ke hře jsou potřeba kostky nebo <a href="https://bit.ly/circusdice" target="_blank" rel="noopener noreferer">aplikace</a>. */}

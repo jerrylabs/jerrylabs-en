@@ -26,8 +26,8 @@ export default () => (
           </a>
         </li>
         <li>
-          <a href="http://instagram.com/jerrousz" target="_blank" rel="noopener noreferrer">
-            <img alt="Jerry @ Instagram" title="Jerry @ Instagram" src="/images/logos/logo-instagram.png" />
+          <a href="http://instagram.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
+            <img alt="JerryLabs @ Instagram" title="JerryLabs @ Instagram" src="/images/logos/logo-instagram.png" />
           </a>
         </li>
         <li>
@@ -36,7 +36,7 @@ export default () => (
           </a>
         </li>
         <li>
-          <a href="https://jihomoravsky.pirati.cz/lide/jaroslav-kamen" target="_blank" rel="noopener noreferrer">
+          <a href="https://lide.pirati.cz/osoba/629/" target="_blank" rel="noopener noreferrer">
             <img alt="Jaroslav Kameň - Česká pirátská strana" title="Jaroslav Kameň - Česká pirátská strana" src="/images/logos/logo-cps.png" />
           </a>
         </li>
@@ -45,7 +45,7 @@ export default () => (
         <div class="contact__address">
           <p>
             Ing. Jaroslav Kameň<br />
-            Masarykova třída 955, Orlová<br />
+            Osvobození 871, Orlová<br />
             IČO 02598248<br />
             tel. +420 608 552 333<br />
             mail: <a href="mailto:jerrylabs@seznam.cz">jerrylabs@seznam.cz</a>

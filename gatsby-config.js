@@ -7,7 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-less`, {
+    `gatsby-plugin-less`,
+    `gatsby-plugin-open-graph-images`, {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
