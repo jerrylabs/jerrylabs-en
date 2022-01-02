@@ -10,9 +10,9 @@ export default () => (
         Pro objednání výroby hry prosím vyplňte formulář níže na této stránce. Hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.
       </p>
 
-      <iframe title="Kontaktní formulář" className="form"
+      <iframe title="Kontaktní formulář" className="form order"
         src="https://docs.google.com/forms/d/e/1FAIpQLSe6TaEOPNeme0R_yi0VJNpIx6vfABfwqmAw4IbqPxBs_ZnOpw/viewform?embedded=true"
-        width="640" height="925" frameBorder="0" marginHeight="0" marginwidth="0"
+        width="640" height="1800" frameBorder="0" marginHeight="0" marginwidth="0"
       >
         Načítání…
       </iframe>

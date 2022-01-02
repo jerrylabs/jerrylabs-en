@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Script from 'react-load-script'
+// import Script from 'react-load-script'
 import Donate from './donate'
 
 
