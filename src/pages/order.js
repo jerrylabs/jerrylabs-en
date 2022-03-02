@@ -4,7 +4,7 @@ import Jumbotron from '../components/jumbotron'
 
 export default () => (
   <Layout>
-     <Jumbotron title="Objednávka výroby deskové hry" className="home zoomy" image="workshop" />
+     <Jumbotron title="Výroba deskové hry" className="home zoomy" image="workshop" />
     <div className="container">
       <p class="big center">
         Požadovanou hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.

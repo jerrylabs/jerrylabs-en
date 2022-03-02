@@ -27,7 +27,7 @@ export default () => {
           </p>
           <div className="game__download-wrap">
             <a href="/games/kta.zip" className="button button--download">Stáhnout</a>
-            <a href="/order" className="button button--order">Objednat</a>
+            <a href="/order" className="button button--order">Vyrobit</a>
           </div>
           <Support />
         </div>
