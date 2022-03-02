@@ -17,7 +17,7 @@ export default () => {
             Rodinná desková hra volně na motivy společenské a politické situace. Volně ke stažení a vytištění na základě <Link to="/licence/">licence Creative Commons</Link>. ZIP archiv (8 MB) obsahuje karty, hrací desku, pravidla a návod k vytištění. Ke hře je třeba kostka a žetonky.
           </p>
           <div className="game__download-wrap">
-            <a href="/games/gangsterburg.zip" className="button button--download">Stáhnout hru</a>
+            <a href="/games/gangsterburg.zip" className="button button--download">Stáhnout</a>
           </div>
           <Support />
         </div>

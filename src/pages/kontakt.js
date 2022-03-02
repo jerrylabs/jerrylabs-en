@@ -7,7 +7,7 @@ export default () => (
      <Jumbotron title="Kontaktujte JerryLabs" className="home zoomy" image="antenna" />
     <div className="container">
       <p class="big center">
-        Vaše dotazy, návrhy, připomínky a objednávky uvítáme prostřednictvím jakéhokoliv z níže uvedených kontaktních kanálů nebo formuláře.
+        Vaše dotazy, návrhy či případné poptávky uvítáme prostřednictvím jakéhokoliv z níže uvedených kontaktních kanálů nebo formuláře.
       </p>
       <ul class="contact__social center">
         <li>

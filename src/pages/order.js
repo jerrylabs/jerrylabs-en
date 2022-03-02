@@ -7,7 +7,7 @@ export default () => (
      <Jumbotron title="Objednávka výroby deskové hry" className="home zoomy" image="workshop" />
     <div className="container">
       <p class="big center">
-        Pro objednání výroby hry prosím vyplňte formulář níže na této stránce. Hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.
+        Požadovanou hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.
       </p>
 
       <iframe title="Kontaktní formulář" className="form order"

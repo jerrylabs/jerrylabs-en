@@ -20,8 +20,8 @@ export default () => {
             {/* Ke hře jsou potřeba kostky nebo <a href="https://bit.ly/circusdice" target="_blank" rel="noopener noreferer">aplikace</a>. */}
           </p>
           <div className="game__download-wrap">
-            <a href="/games/circus.zip" className="button button--download">Stáhnout hru</a>
-            <a href="/order" className="button button--order">Objednat výrobu</a>
+            <a href="/games/circus.zip" className="button button--download">Stáhnout</a>
+            <a href="/order" className="button button--order">Objednat</a>
           </div>
 
           <Support />

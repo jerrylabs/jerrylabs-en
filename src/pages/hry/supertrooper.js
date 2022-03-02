@@ -22,7 +22,7 @@ export default () => {
             <li>Technici vs. Kouzelníci</li>
           </ul>
           <div className="game__download-wrap">
-            <a href="/games/supertrooper.zip" className="button button--download">Stáhnout hru</a>
+            <a href="/games/supertrooper.zip" className="button button--download">Stáhnout</a>
           </div>
           <Support />
         </div>

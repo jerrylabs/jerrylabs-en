@@ -14,19 +14,17 @@ export default () => {
   }
   return (
     <Layout>
-      <Jumbotron title="Webové, herní, grafické a produkční studio" className="home zoomy" image="jumbotron" />
+      <Jumbotron title="Designové a produkční studio" className="home zoomy" image="jumbotron" />
       <div className="container">
-		<p class="big center">Jsme nezávisle webové a grafické studio zabývající se designem, programováním, tvorbou webů, deskových her, jejich produkcí a&nbsp;tiskem.
-		</p>
-		<p class="big center">
-		Dle vašich představ vám zprovozníme <Link to="/weby/">webovou stránku</Link> či vyrobíme <Link to="/hry/">deskovou hru</Link>.
-		</p>
-		<p class="big center">
-		<Link to="/hry/">Naše deskové hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <Link to="/order/">nechat vyrobit</Link>.
-	    </p>
+        <p class="big center">
+          Jsme nezávisle studio zabývající se interakčním designem, programováním, tvorbou webů a deskových her, jejich produkcí a&nbsp;tiskem.
+        </p>
+        <p class="big center">
+          <Link to="/hry/">Naše deskové hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <Link to="/order/">nechat vyrobit</Link>.
+        </p>
       </div>
 
-	  <section id="hry">
+    <section id="hry">
         <div className="container">
           <h2 className="center">Hry od JerryLabs</h2>
         </div>
@@ -51,7 +49,7 @@ export default () => {
 
       <section id="weby">
         <div className="container">
-          <h2 className="center">Ukázky webů od JerryLabs</h2>
+          <h2 className="center">Weby od JerryLabs</h2>
         </div>
         <div className="container cards">
           {webs.slice(0, 7).map((web, i) => (

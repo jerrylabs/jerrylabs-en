@@ -26,8 +26,8 @@ export default () => {
             ZIP archiv (23 MB) obsahuje pravidla a PDF s kartami a žetonky. Hru si zde můžete stáhnout a vytisknout nebo nechat u nás vyrobit.
           </p>
           <div className="game__download-wrap">
-            <a href="/games/kta.zip" className="button button--download">Stáhnout hru</a>
-            <a href="/order" className="button button--order">Objednat výrobu</a>
+            <a href="/games/kta.zip" className="button button--download">Stáhnout</a>
+            <a href="/order" className="button button--order">Objednat</a>
           </div>
           <Support />
         </div>
