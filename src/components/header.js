@@ -19,16 +19,16 @@ export default () => {
         </div>
         <nav>
           <ul className={classnames('header__navigation', {'header__navigation--mobile-visible': expanded})}>
-            <li>
-              <Link to="/weby/" activeClassName="selected">
-                <span>Weby</span>
-              </Link>
-            </li>
-            <li>
+		   <li>
               <Link to="/hry/" activeClassName="selected">
                 <span>Hry</span>
               </Link>
             </li>
+            <li>
+              <Link to="/weby/" activeClassName="selected">
+                <span>Weby</span>
+              </Link>
+            </li>           
             <li>
               <Link to="/kontakt/" activeClassName="selected">
                 <span>Kontakt</span>

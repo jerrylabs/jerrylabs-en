@@ -22,8 +22,8 @@ export default () => {
       <div className="container game__panel">
         <div className="game__download">
           <p className="big">
-            Hra je volně ke stažení a vytištění na základě <Link to="/licence/">licence Creative Commons</Link>.
-            ZIP archiv (23 MB) obsahuje pravidla a PDF s kartami a žetonky.
+            Hra je volně šiřitelná na základě <Link to="/licence/">licence Creative Commons</Link>.
+            ZIP archiv (23 MB) obsahuje pravidla a PDF s kartami a žetonky. Hru si zde můžete stáhnout a vytisknout nebo nechat u nás vyrobit.
           </p>
           <div className="game__download-wrap">
             <a href="/games/kta.zip" className="button button--download">Stáhnout hru</a>

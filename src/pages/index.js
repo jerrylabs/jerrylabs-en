@@ -14,14 +14,41 @@ export default () => {
   }
   return (
     <Layout>
-      <Jumbotron title="Webové a herní studio" className="home zoomy" image="jumbotron" />
+      <Jumbotron title="Webové, herní, grafické a produkční studio" className="home zoomy" image="jumbotron" />
       <div className="container">
-        <p className="big center">
-          Jsme nezávislé webové a&nbsp;herní studio zaměřené na interakční design.
-          Podle vaší grafiky vám seskládáme a&nbsp;rozhýbeme <Link to="/weby/">webovou stránku online</Link>.
-          Anebo si stáhněte nějaké naše kopírovatelné print-to-play <Link to="/hry/">deskové hry</Link> <span role="img" aria-label=";)">😉</span>
-        </p>
+		<p class="big center">Jsme nezávisle webové a grafické studio zabývající se designem, programováním, tvorbou webů, deskových her, jejich produkcí a&nbsp;tiskem.
+		</p>
+		<p class="big center">
+		Dle vašich představ vám zprovozníme <Link to="/weby/">webovou stránku</Link> či vyrobíme <Link to="/hry/">deskovou hru</Link>.
+		</p>
+		<p class="big center">
+		<Link to="/hry/">Naše deskové hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <Link to="/order/">nechat vyrobit</Link>.
+	    </p>
       </div>
+
+	  <section id="hry">
+        <div className="container">
+          <h2 className="center">Hry od JerryLabs</h2>
+        </div>
+        <div className="container cards">
+          {games.slice(0, 3).map((game, i) => (
+            <a key={i}
+              className={`card card--horizontal card--half${game?.status ? ` label ${game.status}` : ''}`}
+              data-attribute="SRL" href={`/hry/${game.codeName}`} title={game.title}
+            >
+              <div className="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
+              <div className="card__content">
+                <h3 className="card__title">{game.title}</h3>
+                <div className="card__description">{game.endorsement}</div>
+              </div>
+            </a>
+          ))}
+          <Link to="/hry/" className="card--half card--more">
+            <span>Všechny hry od JerryLabs…</span>
+          </Link>
+        </div>
+      </section>
+
       <section id="weby">
         <div className="container">
           <h2 className="center">Ukázky webů od JerryLabs</h2>
@@ -51,28 +78,7 @@ export default () => {
         />
       </section>
 
-      <section id="hry">
-        <div className="container">
-          <h2 className="center">Hry od JerryLabs</h2>
-        </div>
-        <div className="container cards">
-          {games.slice(0, 3).map((game, i) => (
-            <a key={i}
-              className={`card card--horizontal card--half${game?.status ? ` label ${game.status}` : ''}`}
-              data-attribute="SRL" href={`/hry/${game.codeName}`} title={game.title}
-            >
-              <div className="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
-              <div className="card__content">
-                <h3 className="card__title">{game.title}</h3>
-                <div className="card__description">{game.endorsement}</div>
-              </div>
-            </a>
-          ))}
-          <Link to="/hry/" className="card--half card--more">
-            <span>Všechny hry od JerryLabs…</span>
-          </Link>
-        </div>
-      </section>
+
       <section id="kontakt">
         <p className="big center">
           S jakýmkoliv dotazem či nabídkou ke spolupráci nás neváhejte <Link to="/kontakt/">kontaktovat</Link>.
