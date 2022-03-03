@@ -14,13 +14,13 @@ export default () => {
   }
   return (
     <Layout>
-      <Jumbotron title="Designové a produkční studio" className="home zoomy" image="jumbotron" />
+      <Jumbotron title="Designové a polygrafické studio" className="home zoomy" image="jumbotron" />
       <div className="container">
         <p class="big center">
-          Jsme nezávisle studio zabývající se interakčním designem, programováním, tvorbou webů a deskových her, jejich produkcí a&nbsp;tiskem.
+          Jsme nezávisle studio zabývající se webovým a herním designem, programováním a výrobou deskových her.
         </p>
         <p class="big center">
-          <Link to="/hry/">Naše deskové hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <Link to="/order/">nechat vyrobit</Link>.
+          <Link to="/hry/">Naše hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <Link to="/order/">nechat vyrobit</Link>.
         </p>
       </div>
 
