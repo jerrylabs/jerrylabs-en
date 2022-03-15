@@ -10,7 +10,7 @@ export default () => {
       <Jumbotron title="Hry od JerryLabs" className="home zoomy" image="sisays-ring" />
       <div class="container">
         <p className="big center">
-          V JerryLabs vyrábíme zábavné kopírovatelné společenské deskové hry. Všechny vydané hry jsou k&nbsp;dispozici zdarma ke stažení a&nbsp;vytisknutí pod licencí <Link to="/licence/">CC BY-NC-ND</Link>. Hry je možné nekomerčně šířit a&nbsp;kopírovat nebo si ji u&nbsp;nás můžete <Link to="/order/">nechat vyrobit</Link>.
+          V JerryLabs vyrábíme zábavné kopírovatelné společenské deskové hry. Všechny vydané hry jsou k&nbsp;dispozici zdarma ke stažení a&nbsp;vytisknutí pod licencí <Link to="/licence/">CC BY-NC-ND</Link>. Hry je možné nekomerčně šířit a&nbsp;kopírovat nebo si ji u&nbsp;nás můžete <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">nechat vyrobit</a>.
         </p>
       </div>
       <div className="container cards small">

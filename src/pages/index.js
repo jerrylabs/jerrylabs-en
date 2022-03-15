@@ -20,7 +20,7 @@ export default () => {
           Jsme nezávisle studio zabývající se webovým a herním designem, programováním a výrobou deskových her.
         </p>
         <p class="big center">
-          <Link to="/hry/">Naše hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <Link to="/order/">nechat vyrobit</Link>.
+          <Link to="/hry/">Naše hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">nechat vyrobit</a>.
         </p>
       </div>
 

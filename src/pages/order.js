@@ -7,7 +7,7 @@ export default () => (
      <Jumbotron title="Výroba deskové hry" className="home zoomy" image="workshop" />
     <div className="container">
       <p class="big center">
-        Požadovanou hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.
+      Cena vyrobení hry je zhruba do 800&nbsp;Kč, za dopravu 50&nbsp;-&nbsp;100&nbsp;Kč. Požadovanou hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.
       </p>
 
       <iframe title="Kontaktní formulář" className="form order"

@@ -18,6 +18,7 @@ export default () => {
           </p>
           <div className="game__download-wrap">
             <a href="/games/gangsterburg.zip" className="button button--download">Stáhnout</a>
+            <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" className="button button--order">Vyrobit</a>
           </div>
           <Support />
         </div>
