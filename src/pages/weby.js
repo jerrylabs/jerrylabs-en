@@ -33,7 +33,7 @@ export default () => {
       </section>
       <section>
         <p className="center">
-          Potřebujete vyrobit či zprovoznit web? Neváhejte nás <Link to="kontakt">kontaktovat</Link>!
+          Potřebujete vyrobit či zprovoznit web? Neváhejte nás <Link to="/kontakt">kontaktovat</Link>!
         </p>
       </section>
       <FsLightbox
