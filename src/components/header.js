@@ -28,17 +28,17 @@ export default () => {
               <Link to="/weby/" activeClassName="selected">
                 <span>Weby</span>
               </Link>
-            </li>           
+            </li>
             <li>
               <Link to="/kontakt/" activeClassName="selected">
                 <span>Kontakt</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="http://jerrylabsgames.com" title="English version" class="localization">
                 <img src="/images/uk_flag.svg" alt="English version" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <button onClick={() => expand(!expanded)} className="mobile-menu-icon">
