@@ -19,11 +19,12 @@ export default () => {
     // }
     return (
         <>
-            <h3 className="center">Podpořte JerryLabs!</h3>
+            <h3 className="center">Support JerryLabs!</h3>
             <Donate />
 
             <p className="center">
-            Nebo <span role="img" aria-label="darovat">🎁</span> platbou na účet 1126400055/3030<br />
+            Or <span role="img" aria-label="darovat">🎁</span> donate to IBAN:&nbsp;CZ93&nbsp;3030&nbsp;0000&nbsp;0011&nbsp;2640&nbsp;0055
+BIC:&nbsp;AIRACZPP<br />
             </p>
             {/* Reklama Sklik */}
             {/* <Script
