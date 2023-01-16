@@ -8,15 +8,15 @@ export default ({game}) => {
       <div className="gameInfo__fields">
         <div className="gameInfo__field">
           <div className="gameInfo__value"><span role="img" aria-labelledby="lblPls">👪</span> {game.players}</div>
-          <div className="gameInfo__label" id="lblPls">Počet hráčů</div>
+          <div className="gameInfo__label" id="lblPls">Players</div>
         </div>
         <div className="gameInfo__field">
           <div className="gameInfo__value"><span role="img" aria-labelledby="lblTime">⏰</span> {game.time}</div>
-          <div className="gameInfo__label" id="lblTime">Délka hry</div>
+          <div className="gameInfo__label" id="lblTime">Time</div>
         </div>
         <div className="gameInfo__field">
           <div className="gameInfo__value"><span role="img" aria-labelledby="lblAge">👶</span> {game.age}</div>
-          <div className="gameInfo__label" id="lblAge">Věk</div>
+          <div className="gameInfo__label" id="lblAge">Age</div>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ export default ({game}) => {
         </div>
       )}
 
-      {game.images && (
+      {!!game.images?.length && (
         <>
           <h2>Galerie</h2>
           <div className="gameInfo__gallery">

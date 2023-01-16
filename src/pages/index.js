@@ -14,25 +14,25 @@ export default () => {
   }
   return (
     <Layout>
-      <Jumbotron title="Designové a polygrafické studio" className="home zoomy" image="jumbotron" />
+      <Jumbotron title="Design > Code > Print > Play" className="home zoomy" image="jumbotron" />
       <div className="container">
-        <p class="big center">
-          Jsme nezávisle studio zabývající se webovým a herním designem, programováním a výrobou deskových her.
+        <p className="big center">
+        We are independent design studio studio producing websites and board games based in Orlová, Czech Republic.
         </p>
-        <p class="big center">
-          <Link to="/hry/">Naše hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">nechat vyrobit</a>.
+        <p className="big center">
+          <Link to="/games">Our board games</Link> are shared under <Link to="/license">Creative Commons license</Link> so you can print them yourself or <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">order it from us</a>.
         </p>
       </div>
 
-    <section id="hry">
+      <section id="hry">
         <div className="container">
-          <h2 className="center">Hry od JerryLabs</h2>
+          <h2 className="center">Games from JerryLabs</h2>
         </div>
         <div className="container cards">
           {games.slice(0, 3).map((game, i) => (
             <a key={i}
-              className={`card card--horizontal card--half${game?.status ? ` label ${game.status}` : ''}`}
-              data-attribute="SRL" href={`/hry/${game.codeName}`} title={game.title}
+              className={`card card--horizontal card--half${game.status ? ` label ${game.status}` : ''}`}
+              data-attribute="SRL" href={`/games/${game.codeName}`} title={game.title}
             >
               <div className="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
               <div className="card__content">
@@ -41,15 +41,15 @@ export default () => {
               </div>
             </a>
           ))}
-          <Link to="/hry/" className="card--half card--more">
-            <span>Všechny hry od JerryLabs…</span>
+          <Link to="/games/" className="card--half card--more">
+            <span>More games from JerryLabs…</span>
           </Link>
         </div>
       </section>
 
       <section id="weby">
         <div className="container">
-          <h2 className="center">Weby od JerryLabs</h2>
+          <h2 className="center">Webs from JerryLabs</h2>
         </div>
         <div className="container cards">
           {webs.slice(0, 7).map((web, i) => (
@@ -61,12 +61,12 @@ export default () => {
               <img className="card__image" src={web.image} alt={`${web.title} (${web.year})`} />
               <div className="card__content">
                 <h3 className="card__title">{web.title}</h3>
-                {/* <div className="card__description">{web.year}</div> */}
+                <div className="card__description">{web.year}</div>
               </div>
             </a>
           ))}
-          <Link to="/weby/" className="card--quarter card--more">
-            <span>Zobrazit více…</span>
+          <Link to="/webs/" className="card--quarter card--more">
+            <span>More websites…</span>
           </Link>
         </div>
         <FsLightbox
@@ -76,10 +76,9 @@ export default () => {
         />
       </section>
 
-
       <section id="kontakt">
         <p className="big center">
-          S jakýmkoliv dotazem či nabídkou ke spolupráci nás neváhejte <Link to="/kontakt/">kontaktovat</Link>.
+          Do you have any questions or ideas? We will be happy to hear it from you. Please <Link to="/kontakt/">let us know</Link>.
         </p>
       </section>
 

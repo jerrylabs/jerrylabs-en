@@ -1,16 +1,29 @@
 [
   {
-    "title": "Kraď to auto!",
+    "title": "Final Conflict",
+    "codeName": "finalconflict",
+    "players": "2",
+    "time": "20 minutes",
+    "age": "from 12 years",
+    "publishYear": "2023",
+    "endorsement": "In the year 2500, the last clash of civilizations in human history occurred on a post-apocalyptic Earth. Any hope of reconciliation or dialogue is completely unthinkable. The final conflict has begun.",
+    "description": "The culmination of the long-running Super Trooper card series in the form of a standalone expansion with improved rules.",
+    "tags": ["competetive", "action", "card", "sci-fi", "post-apocalyptic"],
+    "images": [],
+    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/378351/super-trooper-final-conflict"},
+    "status": "comingsoon"
+  },
+  {
+    "title": "KTA: Krack That Auto!",
     "codeName": "kta",
     "players": "2‑6",
-    "time": "20‑40 minut",
-    "age": "od 15 let",
+    "time": "20‑40 minutes",
+    "age": "from 15 years",
     "publishYear": "2021",
-    "endorsement": "Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!",
-    "description": "Akční karetní hra mapující život \"obchodníka\" s automobily ve městě Gangsterburg. Plň kšefty od rozvozu pizzy až po přepadení banky a bacha na policajty!",
-    "tags": ["kompetetivní", "akční", "gangsterka", "mafie"],
-    "images": ["cover.png", "game.jpg", "cards.jpg", "figures.jpg"],
-    "status": "new"
+    "endorsement": "Steal cars, run from the cops, crash and shoot your rivals to fulfill deals for mafia bosses and rake in the big bucks!",
+    "description": "An action card game charting the life of a car dealer in the city of Gangsterburg. From delivering pizzas to robbing banks, and watch out for the cops!",
+    "tags": ["competetive", "action", "gangsters", "mafia"],
+    "images": ["cover.png", "game.jpg", "cards.jpg", "figures.jpg"]
   }, {
     "title": "Cyborg Mutant Zombie Circus",
     "codeName": "circus",
@@ -18,8 +31,8 @@
     "time": "30‑60 minut",
     "age": "od 15 let",
     "publishYear": "2020",
-    "endorsement": "Nejslavnější meziplanetární reality show budoucnosti! Získejte přízeň fanoušků po celé Galaxii překonáváním nástrah v bláznivém, ale smrtonosném labyrintu.",
-    "description": "Karetní kompetetivní sci-fi dystopický RPG dungeon survival - reality show simulátor plný absurdního humoru. Váš cíl je se jako vyřazený robot či nepovedený mutant stát plnoprávným člověkem.",
+    "endorsement": "Simulator of the most famous interplanetary reality show of the future! Win fans across the galaxy by overcoming pitfalls in a crazy but deadly maze.",
+    "description": "Competitive sci-fi RPG dungeon crawler card game. As artificial humanoid your goal is to survive and earn the fame and glory in crazy labyrinth full of monsters and traps.",
     "tags": ["kompetetivní", "sci-fi", "rpg", "survival", "dystopická", "humor"],
     "images": ["circus001.jpg", "circus002.jpg", "circus003.jpg", "circus004.jpg", "circus005.jpg", "circus006.jpg", "circus007.jpg", "circus008.jpg"],
     "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332152/cyborg-mutant-zombie-circus"}
@@ -30,9 +43,9 @@
     "time": "90‑120 minut",
     "age": "od 18 let",
     "publishYear": "2013",
-    "endorsement": "Ovládni jako hlava mafiánské rodiny hospody, kasína, hampejzy a nakonec celé zkorumpované město Gangsterburg - semeniště kriminálníků a podvratných živlů.",
-    "description": "Desková budovatelská „obíhačka“, ve které hráči nakupují podniky šedé ekonomiky. Jejich prostřednictvím pak naplňují potřeby význačných veřejných činitelů za účelem ovládnutí města.",
-    "tags": ["kompetitivní", "budovatelská", "gangsterka", "mafie"],
+    "endorsement": "As the head of a mafia family, control the pubs, casinos, gambling houses and eventually the entire corrupt city of Gangsterburg - a breeding ground for criminals and subversives.",
+    "description": "Board game based on social and political situation. Become the master boss of all mafia families in the Gangsterburg, city full of clubs, brothels, gambling and illegal substancies",
+    "tags": ["competetive", "building", "strategy", "gangsters", "mafia"],
     "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332154/gangsterburg"}
   }, {
     "title": "Super Trooper",
@@ -41,9 +54,9 @@
     "time": "20‑60 minut",
     "age": "od 13 let",
     "publishYear": "2011",
-    "endorsement": "Jako jeden z několika svobodných warlordů ubraň svou zemi před nájezdníky a megakorporacemi. Kopírovatelný remake legendární karetní hry Doomtrooper.",
-    "description": "Kopírovatelná alternativa sběratelské karetní hry Doomtrooper. Poměřte sílu s armádami ostatních hráčů! K dispozici máme tři páry předchystaných balíčků pro duel.",
-    "tags": ["kompetetivní", "sci-fi", "bitevní", "strategická", "deck building"],
+    "endorsement": "As one of several free warlords, defend your country from raiders and megacorporations. A free-to-print remake of the legendary Doomtrooper card game.",
+    "description": "Copiable alternative of Doomtrooper trading card game. Defeat the armies of other players in harsh post-capitalist dystopic world!",
+    "tags": ["competetive", "sci-fi", "battle", "strategy", "deck building"],
     "extLinks": {
       "bgg": "https://boardgamegeek.com/boardgame/144893/super-trooper",
       "zatrolene": "https://www.zatrolene-hry.cz/spolecenska-hra/super-trooper-3617/"
