@@ -30,7 +30,7 @@ export default () => {
         <div className="container">
           <h2>More about the game</h2>
           <p>
-            Super Trooper: Final Conflict is standalone expansion of science fiction fantasy crossover card game <Link to='/hry/supertrooper'>Super Trooper.</Link>
+            Super Trooper: Final Conflict is standalone expansion of science fiction fantasy crossover card game <Link to='/games/supertrooper'>Super Trooper.</Link>
           </p>
           <p>
             In the year 2500, humanity is not on a bed of roses. The polluted and contaminated planet Earth has become an inhospitable home for humanity, whose global population has split into two ideological factions.
