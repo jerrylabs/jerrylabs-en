@@ -2,6 +2,13 @@ import React, {useState} from 'react'
 import {Link} from 'gatsby'
 import classnames from 'classnames'
 
+const localizeURL = (url) => url
+  .replace('contact', 'kontakt')
+  .replace('games', 'hry')
+  .replace('webs', 'weby')
+  .replace('license', 'licence')
+  .replace('jerrylabs.games.com', 'jerrylabs.cz')
+
 export default () => {
   // viditelnost na mobilu
   const [expanded, expand] = useState(false)
@@ -34,11 +41,11 @@ export default () => {
                 <span>Contact</span>
               </Link>
             </li>
-            {/* <li>
-              <a href="http://jerrylabsgames.com" title="English version" class="localization">
-                <img src="/images/uk_flag.svg" alt="English version" />
+            <li>
+              <a href={localizeURL(window.location.href)} title="Czech version" class="localization">
+                <img src="/images/cz_flag.svg" alt="Czech version" />
               </a>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <button onClick={() => expand(!expanded)} className="mobile-menu-icon">
