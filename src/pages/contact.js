@@ -16,28 +16,18 @@ export default () => (
           </a>
         </li>
         <li>
-          <a href="http://twitter.com/jerrylabs" target="_blank" rel="noopener noreferrer">
+          <a href="http://twitter.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
             <img alt="JerryLabs @ Twittter" title="JerryLabs @ Twittter" src="/images/logos/logo-twitter.png" />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jerrylabs" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/70417359" target="_blank" rel="noopener noreferrer">
             <img alt="Jaroslav Kameň at LinkedIn" title="Jaroslav Kameň at LinkedIn" src="/images/logos/logo-linkedin.png" />
           </a>
         </li>
         <li>
-          <a href="http://instagram.com/jerrousz" target="_blank" rel="noopener noreferrer">
+          <a href="http://instagram.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
             <img alt="Jerry @ Instagram" title="Jerry @ Instagram" src="/images/logos/logo-instagram.png" />
-          </a>
-        </li>
-        <li>
-          <a href="http://www.imdb.com/name/nm6707588/" target="_blank" rel="noopener noreferrer">
-            <img alt="Jaroslav Kameň at IMDb" title="Jaroslav Kameň at IMDb" src="/images/logos/logo-imdb.png" />
-          </a>
-        </li>
-        <li>
-          <a href="https://jihomoravsky.pirati.cz/lide/jaroslav-kamen" target="_blank" rel="noopener noreferrer">
-            <img alt="Jaroslav Kameň - Czech Pirate Party" title="Jaroslav Kameň - Czech Pirate Party" src="/images/logos/logo-cps.png" />
           </a>
         </li>
       </ul>
