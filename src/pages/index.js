@@ -14,7 +14,7 @@ export default () => {
   }
   return (
     <Layout>
-      <Jumbotron title="Design > Code > Print > Play" className="home zoomy" image="jumbotron" />
+      <Jumbotron title="Design > Code > Print > Play" className="zoomy" image="jumbotron" />
       <div className="container">
         <p className="big center">
         We are independent design studio studio producing websites and board games based in Orlová, Czech Republic.

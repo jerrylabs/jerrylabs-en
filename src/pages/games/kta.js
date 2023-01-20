@@ -18,7 +18,7 @@ export default () => {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Download and print the card game. Steal cars, dodge cops, crash and shoot your opponents to complete jobs for mafia bosses and rake in the big bucks!" />
       </Helmet>
-      <Jumbotron title={currGame.title} className="home zoomy" image="kta-game" />
+      <Jumbotron title={currGame.title} className="zoomy" image="kta-game" />
       <div className="container game__panel">
         <div className="game__download">
           <p className="big">

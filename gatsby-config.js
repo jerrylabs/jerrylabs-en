@@ -43,42 +43,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        // The property ID; the tracking code won't be generated without it.
-        trackingId: "UA-48846432-1",
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: false, // default false
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: true,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        // autoStartWithCookiesEnabled: false,
-        // Turn off cookies
-        storage: 'none',
-        // Optional parameter - Configuration for react-ga and google analytics
-        reactGaOptions: {
-            debug: true,
-            gaOptions: {
-                sampleRate: 100
-            }
+        googleAnalytics: {
+          trackingId: 'UA-48846432-1', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics', // default
+          anonymize: true, // default
+          allowAdFeatures: false // default
         }
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        // printRejected: true, // Print removed selectors and processed file names
-        // develop: true, // Enable while using `gatsby develop`
-        tailwind: true, // Enable tailwindcss support
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-        purgeCSSOptions: {
-          // https://purgecss.com/configuration.html#options
-          safelist: {
-            greedy: [/before$/]
-          }
-        },
-        // More options defined here https://purgecss.com/configuration.html#options
       },
     },
   ]

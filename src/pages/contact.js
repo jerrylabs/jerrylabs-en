@@ -4,12 +4,12 @@ import Jumbotron from '../components/jumbotron'
 
 export default () => (
   <Layout>
-     <Jumbotron title="Contact JerryLabs" className="home zoomy" image="antenna" />
+     <Jumbotron title="Contact JerryLabs" className="zoomy" image="antenna" />
     <div className="container">
-      <p class="big center">
+      <p className="big center">
         All your questions, orders or any other feedback can be addressed via any of channels or the form below.
       </p>
-      <ul class="contact__social center">
+      <ul className="contact__social center">
         <li>
           <a href="http://facebook.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
             <img alt="JerryLabs Games - Facebook" title="JerryLabs Games on Facebook" src="/images/logos/logo-facebook.png" />
@@ -31,8 +31,8 @@ export default () => (
           </a>
         </li>
       </ul>
-      <div class="contact">
-        <div class="contact__address">
+      <div className="contact">
+        <div className="contact__address">
           <p>
             Ing. Jaroslav Kameň<br />
             Masarykova třída 955, Orlová<br />
@@ -42,7 +42,7 @@ export default () => (
             mail: <a href="mailto:jerrylabs@seznam.cz">jerrylabs@seznam.cz</a>
           </p>
         </div>
-        <img class="contact__photo" src="/images/jerry-photo.jpg" alt="Jaroslav Kameň" title="Jaroslav Kameň" />
+        <img className="contact__photo" src="/images/jerry-photo.jpg" alt="Jaroslav Kameň" title="Jaroslav Kameň" />
       </div>
 
       <iframe title="Kontaktní formulář" className="form"

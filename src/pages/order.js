@@ -4,9 +4,9 @@ import Jumbotron from '../components/jumbotron'
 
 export default () => (
   <Layout>
-     <Jumbotron title="Výroba deskové hry" className="home zoomy" image="workshop" />
+     <Jumbotron title="Výroba deskové hry" className="zoomy" image="workshop" />
     <div className="container">
-      <p class="big center">
+      <p className="big center">
       Cena vyrobení hry je zhruba do 800&nbsp;Kč, za dopravu 50&nbsp;-&nbsp;100&nbsp;Kč. Požadovanou hru jsme schopni vyrobit a odeslat do týdne, pokud nedojde k přetížení výrobních kapacit.
       </p>
 

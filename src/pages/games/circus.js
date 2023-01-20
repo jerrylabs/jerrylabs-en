@@ -10,7 +10,7 @@ export default () => {
   const currGame = games.find(game => game.codeName === 'circus')
   return (
     <Layout className="game">
-      <Jumbotron title={currGame.title} className="home zoomy" image="circus" />
+      <Jumbotron title={currGame.title} className="zoomy" image="circus" />
       <div className="container game__panel">
         <div className="game__download">
           <p className="big">

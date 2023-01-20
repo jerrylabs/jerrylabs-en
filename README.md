@@ -12,7 +12,7 @@ Powered by GatsbyJS and GitHub ❤
 
 For kickstart your static react website, check [https://github.com/gatsbyjs/gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
-For developing like a charm use gatsby-cli v2.19.3 and Node v16.14.0, then go:
+Local development:
 
 ```
 npm i
