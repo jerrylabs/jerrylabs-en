@@ -2,9 +2,9 @@ import makeConfig from "/js/matrix/js/config.js";
 
 const canvas = document.createElement("canvas");
 document.querySelector('.jumbotron__bg').appendChild(canvas);
-document.addEventListener("touchmove", (e) => e.preventDefault(), {
-	passive: false,
-});
+// document.addEventListener("touchmove", (e) => e.preventDefault(), {
+// 	passive: false,
+// });
 
 const supportsWebGPU = async () => {
 	return window.GPUQueue != null && navigator.gpu != null && navigator.gpu.getPreferredCanvasFormat != null;
