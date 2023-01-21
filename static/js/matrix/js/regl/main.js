@@ -41,7 +41,6 @@ export default async (canvas, config) => {
 		const devicePixelRatio = window.devicePixelRatio ?? 1;
 		canvas.width = Math.ceil(canvas.clientWidth * devicePixelRatio * config.resolution);
 		canvas.height = Math.ceil(canvas.clientHeight * devicePixelRatio * config.resolution);
-		console.log('xxx',canvas.clientWidth, devicePixelRatio, config.resolution);
 	};
 	window.onresize = resize;
 	if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
