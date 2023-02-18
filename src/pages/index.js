@@ -17,7 +17,7 @@ export default () => {
       <Jumbotron title="Design > Code > Print > Play" className="zoomy" image="jumbotron" />
       <div className="container">
         <p className="big center">
-        We are independent design studio studio producing websites and board games based in Orlová, Czech Republic.
+        We are independent design studio producing websites and board games based in Orlová, Czech Republic.
         </p>
         <p className="big center">
           <Link to="/games">Our board games</Link> are shared under <Link to="/license">Creative Commons license</Link> so you can print them yourself or <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">order it from us</a>.

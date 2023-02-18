@@ -35,7 +35,7 @@ export default () => (
         <div className="contact__address">
           <p>
             Ing. Jaroslav Kameň<br />
-            Masarykova třída 955, Orlová<br />
+            Osvobození 871, Orlová<br />
             Czech Republic<br />
             IČO 02598248<br />
             tel. +420 608 552 333<br />
