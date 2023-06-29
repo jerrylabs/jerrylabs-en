@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Jumbotron from '../components/Jumbotron.astro'
+import webs from '../data/weby.json'
+import games from '../data/hry.json'
+---
+<Layout>
+  <Jumbotron title="Design > Code > Print > Play" className="zoomy" image="jumbotron" />
+  <div class="container">
+    <p class="big center">
+      We are independent design studio studio producing websites and board games based in Orlová, Czech Republic.
+    </p>
+    <p class="big center">
+      <a href="/games">Our board games</a> are shared under <a href="/license">Creative Commons license</a> so you can print them yourself or <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">order it from us</a>.
+    </p>
+  </div>
+
+  <section id="hry">
+    <div class="container">
+      <h2 class="center">Games from JerryLabs</h2>
+    </div>
+    <div class="container cards">
+      {games.slice(0, 3).map((game, i) => (
+        <a
+          class={`card card--horizontal card--half${game?.status ? ` label ${game.status}` : ''}`}
+          data-attribute="SRL" href={`/hry/${game.codeName}`} title={game.title}
+        >
+          <div class="card__image" style={`background-image: url('/images/${game.codeName}.jpg')`} />
+          <div class="card__content">
+            <h3 class="card__title">{game.title}</h3>
+            <div class="card__description">{game.endorsement}</div>
+          </div>
+        </a>
+      ))}
+      <a href="/hry/" class="card--half card--more">
+        <span>More games from JerryLabs…</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="weby">
+    <div class="container">
+      <h2 class="center">Webs from JerryLabs</h2>
+    </div>
+    <div class="container cards">
+      {webs.slice(0, 7).map((web, i) => (
+        <a
+          class="card card--vertical card--quarter card--centered"
+          href={web.image} title={web.title}
+          data-fslightbox="webs-lightbox"
+        >
+          <img class="card__image" src={web.image} alt={`${web.title}  ${web.year}`} />
+          <div class="card__content">
+            <h3 class="card__title">{web.title}</h3>
+            {/* <div class="card__description">{web.year}</div> */}
+          </div>
+        </a>
+      ))}
+      <a href="/weby/" class="card--quarter card--more">
+        <span>More websites…</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <p class="big center">
+      Any questions or ideas? We will be happy to hear it from you. Please <a href="/contact">let us know</a>.
+    </p>
+  </section>
+
+</Layout>
+
+<script src="../scripts/fslightbox.js"></script>

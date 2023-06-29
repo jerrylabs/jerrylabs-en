@@ -1,0 +1,193 @@
+---
+const { title, description, className , ogTitle, ogUrl, ogImage, ogType, ogDesription} = Astro.props;
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description}>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    {ogTitle && <meta property="og:title" content={ogTitle} />}
+    {ogUrl && <meta property="og:url" content={ogUrl} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogType && <meta property="og:type" content={ogType} />}
+    {ogDesription && <meta property="og:description" content={ogDesription} />}
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class={className || null}>
+      <Header />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 100%; /* 1rem ~ 16px */
+    position: relative;
+    padding-bottom: 3.75rem;;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  @media (max-width: 800px) {
+    html {font-size: 90%; }
+  }
+  @media (max-width: 600px) {
+    html { font-size: 85%; }
+  }
+
+  p a, .p a, p a:hover, .p a:hover { color: LightCoral; text-decoration: none; }
+  p a:hover, .p a:hover { border-bottom: 1px dashed LightCoral; }
+
+  body { font-family: 'Poppins', Verdana, sans-serif; }
+
+  .container {
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+  .container.cards { padding: 0; }
+  .container.small { max-width: 900px; }
+
+
+  h1, h2, h3 { margin: 0 0 1.5rem; font-weight: 500; }
+  h3 { margin-bottom: 1rem; }
+  ul { margin: 0; }
+  section { padding: 2rem 0; outline: none !important; }
+  section ul { margin-bottom: 1rem; }
+
+
+  p { max-width: 40rem; margin: 0 0 1rem; }
+  p.center { margin-left: auto; margin-right: auto; }
+  p.big { margin-top: 1rem; margin-bottom: 1rem; max-width: 45rem; }
+  @media (min-width: 750px) {  p.big {font-size: 120%; } }
+  @media (max-width: 999px) { p.big { margin: 1rem auto; text-align: center; } }
+  p.SRLCaption { max-width: none; }
+
+  .hidden { display: none; }
+  .nowrap { white-space: nowrap; }
+  .blue-bg { background: rgba(75,0,130,0.2); }
+  .center { text-align: center; }
+  .nomargin { margin: 0; }
+  button { padding: 0; border: none; background: none; }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); overflow: hidden;
+    margin: 1rem; color: black; text-decoration: none; transition: all 0.2s ease;
+  }
+  .card:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); transform: scale(1.05); }
+  .card--no-shadow { box-shadow: none; }
+
+  .card--more {
+    margin: 1rem; color: LightCoral; text-decoration: none; font-size: 1.2rem; font-weight: 500;
+    display: flex; align-items: center; justify-content: center; transition: all 0.2s ease;
+    span { border-bottom: 1px solid transparent; }
+  }
+  .card--more:hover {  transform: scale(1.05); }
+  .card--more:hover span { border-bottom: 1px dashed LightCoral; }
+
+  .card--centered { text-align: center; }
+  .card__title { font-weight: 500; margin: 0; font-size: 1rem; }
+  .card__description { opacity: 0.8; font-size: 0.9rem; }
+  .card--vertical .card__image { width: 100%; height: auto; display: block; }
+  .card--vertical .card__content { padding: 0.5rem 1rem; }
+
+  .card--horizontal .card__title {
+    font-weight: 500;
+    margin: 0 0 1rem;
+    font-size: 145%;
+    line-height: 1.2;
+  }
+  .card--horizontal .card__image { width: 38%;
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-position: center center;}
+  .card--horizontal .card__content { padding: 1rem; padding-left: calc(38% + 1rem); }
+
+  .card.label { position: relative; }
+  .card.label::before {
+      display: block; text-transform: uppercase;
+      color: white; position: absolute;
+      top: 0; left: 2.8rem;
+      transform: translate(-50%, 2rem) rotate(-45deg);
+      padding: 0.1rem 3rem;
+      content: ' ';
+    }
+  .card.label.comingsoon::before { content: "P\159ipravujeme"; background: DarkRed; }
+  .card.label.new::before { content: "Novinka";  background: DarkGreen; }
+
+  .card--quarter { flex: 1 1 calc(25% - 2rem); }
+  .card--third { flex: 0 1 calc(33.3% - 2rem); }
+  .card--half { flex: 0 1 calc(50% - 2rem); }
+  .card--full { flex: 0 1 calc(100% - 2rem); }
+
+  @media (min-width: 900px) {
+    .card--big .card__title { font-size: 2rem; margin-bottom: 1rem; }
+    .card--big .card__description { font-size: 1.2rem; max-width: 40rem;}
+  }
+  @media (max-width: 900px) {
+    .card--quarter { flex: 0 1 calc(33.3% - 2rem); }
+    .card--half { flex: 0 1 calc(100% - 2rem); }
+  }
+  @media (max-width: 580px) {
+    .card--quarter, .card--third { flex: 0 1 calc(50% - 2rem); }
+  }
+  @media (max-width: 380px) {
+    .card--quarter, .card--third { flex: 0 1 calc(100% - 2rem); }
+  }
+
+  @media (min-width: 1000px) {
+    .game__info { width: 50%; padding-top: 1.5rem; }
+    .game__download {float: right; width: calc(50% - 3rem); padding-left: 3rem; }
+  }
+  .game__download-wrap {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .game__download-wrap .button { margin: 1rem; }
+
+  .button--download, .button--order {
+    display: block;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3em;
+    transition: all 0.2s ease;
+  }
+  .button--download:hover, .button--order:hover {
+    transform: scale(1.05);
+    color: white;
+  }
+
+.button--download { background: linear-gradient(#197019 0%, #004B00 50%, #197019 100%); }
+.button--order { background: linear-gradient(#701919 0%, #4B0000 50%, #701919 100%) }
+
+</style>

@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Jumbotron from '../components/Jumbotron.astro'
+import games from '../data/hry.json'
+---
+<Layout>
+  <Jumbotron title="Hry od JerryLabs" className="zoomy" image="sisays-ring" />
+  <div class="container">
+    <p class="big center">
+      All our games are available for download, print and play and can be shared and distributed non-commercionally under <a href="/license">CC BY-NC-ND license</a>.
+      Also you can <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">order the production from us</a>.
+    </p>
+  </div>
+  <div class="container cards small">
+     {games.map((game, i) => (
+      <a
+        class={`card card--horizontal card--full${game?.status ? ` label ${game.status}` : ''}`}
+       href={`/games/${game.codeName}`} title={game.title}
+      >
+        <div class="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
+        <div class="card__content">
+          <h3 class="card__title">{game.title}</h3>
+          <p class="card__description brief">For {game.players} players from {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
+          <div class="card__description">{game.description}</div>
+        </div>
+      </a>
+    ))}
+  </div>
+</Layout>

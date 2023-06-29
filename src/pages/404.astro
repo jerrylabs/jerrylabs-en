@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+<Layout>
+  <div class="p404">
+    <div class="container">
+      <section>
+        <h1>Once upon a time, there was a web page... or not?</h1>
+        <p>We cannot find that <span role="img" aria-label="Sorry">🤷</span> Try instead:</p>
+          <ul class="p">
+          <li><a href="/webs"><span>Webs</span></a></li>
+          <li><a href="/games"><span>Games</span></a></li>
+          <li><a href="/contact"><span>Contact</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .p404 {
+    background: #fff url(/images/ravens.jpg) center bottom no-repeat;
+    background-size: cover;
+    padding: 1rem 0 0;
+    min-height: calc(100vh - 7.125rem);
+    margin-bottom: -2rem;
+  }
+</style>

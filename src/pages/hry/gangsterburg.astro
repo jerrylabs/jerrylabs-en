@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'gangsterburg')
+---
+<Layout class="game">
+  <Jumbotron title={currGame.title} class="zoomy" image="gangsterburg" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Unfortunately this game is currently available only in Czech language. Please consider supporting JerryLabs to translate it to English.
+          </p>
+      </p>
+      <!-- <div class="game__download-wrap">
+        <a href="/games/gangsterburg.zip" class="button button--download">Stáhnout</a>
+        <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" class="button button--order">Vyrobit</a>
+      </div> -->
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>More about the game</h2>
+        <p>
+        The city of Gangsterburg was always the home of myriads of criminals and outcasts. Newly elected City Council knows the final solution! General amnesty and privatization of all city enterprises brings challenges for all mafia mob bosses to exploit the prey.
+        </p>
+        <p>
+          As a head of one of the families your task is to get more influence than any others and take control of the whole Gangsterburg!
+        </p>
+        <p>
+          You can buy the degustation companies (pubs), financial advisories (casinos), public services (brothels) and centres of experience (illegal drugs) and corrupt the police, judges and politicians.
+        </p>
+        <h2>Acknowledgement</h2>
+        <p>
+          Big thanks to everybody who participated on development and testing of this board game.
+        </p>
+    </div>
+  </section>
+</Layout>

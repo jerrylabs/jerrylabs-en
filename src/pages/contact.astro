@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Jumbotron from '../components/Jumbotron.astro'
+---
+<Layout>
+  <Jumbotron title="Kontaktujte JerryLabs" class="zoomy" image="antenna" />
+  <div class="container">
+    <p class="big center">
+      All your questions, orders or any other feedback can be addressed via any of channels or the form below.
+    </p>
+   <ul class="contact__social center">
+     <li>
+       <a href="http://facebook.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
+         <img alt="JerryLabs Games - Facebook" title="JerryLabs Games on Facebook" src="/images/logos/logo-facebook.png" />
+       </a>
+     </li>
+     <li>
+       <a href="http://twitter.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
+         <img alt="JerryLabs @ Twittter" title="JerryLabs @ Twittter" src="/images/logos/logo-twitter.png" />
+       </a>
+     </li>
+     <li>
+       <a href="https://www.linkedin.com/company/70417359" target="_blank" rel="noopener noreferrer">
+         <img alt="JerryLabs na LinkedIn" title="JerryLabs @ LinkedIn" src="/images/logos/logo-linkedin.png" />
+       </a>
+     </li>
+     <li>
+       <a href="http://instagram.com/jerrylabsgames" target="_blank" rel="noopener noreferrer">
+         <img alt="JerryLabs @ Instagram" title="JerryLabs @ Instagram" src="/images/logos/logo-instagram.png" />
+       </a>
+     </li>
+   </ul>
+   <div class="contact">
+     <div class="contact__address">
+       <p>
+        Ing. Jaroslav Kameň<br />
+        Osvobození 871, Orlová<br />
+        Czech Republic<br />
+        IČO 02598248<br />
+        tel. +420 608 552 333<br />
+        mail: <a href="mailto:jerrylabs@seznam.cz">jerrylabs@seznam.cz</a>
+       </p>
+     </div>
+     <img class="contact__photo" src="/images/jerry-photo.jpg" alt="Jaroslav Kameň" title="Jaroslav Kameň" />
+   </div>
+
+   <iframe title="Contact form" class="form"
+     src="https://docs.google.com/forms/d/e/1FAIpQLScsmoXQKKGRzHvJiFbxE4fwICU_ytvjRLFGVsyHyD9aic4Qtg/viewform?embedded=true"
+     width="640" height="725" frameBorder="0" marginHeight="0" marginwidth="0"
+   >
+     Načítání…
+   </iframe>
+
+ </div>
+</Layout>
+
+<style>
+  .contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact__address {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact__social {
+  list-style-type: none;
+  font-size: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+li {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+}
+
+@media (max-width: 400px) {
+  li { margin-right: 0.5rem; }
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+a:hover img { transform: scale(1.1); }
+
+.contact__photo {
+  height: 8rem;
+  width: auto;
+  border-radius: 7rem;
+}
+
+@media (max-width: 600px) {
+  .contact__address {
+    order: 1;
+  }
+  .contact__photo {
+    order: 2;
+    margin-bottom: 1rem;
+  }
+}
+
+.form { width: 100%; height: 810px; }
+.form.order { height: 1800px; }
+
+</style>

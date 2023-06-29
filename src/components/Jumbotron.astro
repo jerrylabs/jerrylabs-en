@@ -1,0 +1,125 @@
+---
+const { className, title, image } = Astro.props;
+---
+<div class={`jumbotron ${className || ''}`};>
+  <div class="jumbotron__bg" style={`background-image: url('/images/${image}.jpg');`} />
+  <div class="container">
+    <h1 class="jumbotron__title">{title}</h1>
+  </div>
+</div>
+
+{image === 'matrix' && <script is:inline type="module" src="/js/matrix/js/main.js"></script>}
+<style is:global>
+  .jumbotron__bg canvas { width: 100%; height: 100%; }
+</style>
+<style>
+  @keyframes zoomy {
+    0% { transform: scale(1); }
+    10% { transform: scale(1); }
+    90% { transform: scale(1.1); }
+    100% { transform: scale(1.1); }
+  }
+
+  .jumbotron { position: relative; height: 18.75rem; overflow: hidden; }
+  .jumbotron__bg {
+    position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;
+    background-size: cover; background-position: center;
+  }
+
+  .zoomy .jumbotron__bg {
+    animation-name: zoomy;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .jumbotron h1 {
+    display: inline-block;
+    color: white;
+    background: rgba(75,0,130,0.7);
+    padding: 1rem;
+    margin-top: 12.5rem;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 1600px) {
+    .jumbotron {
+      height: 14.375rem;;
+    }
+    .jumbotron h1 {
+      margin-top: 8.125rem;;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .jumbotron {
+      height: auto;
+    }
+    .jumbotron h1 {
+      margin-top: 1.5rem;
+      font-size: 1.75rem;
+    }
+  }
+
+  .jumbotron__matrix p {
+    color: hsl(108, 90%, 70%);
+    text-shadow: hsl(108, 90%, 40%) 1px 0 10px;
+  }
+
+  .jumbotron__matrix .notice {
+    margin-top: 10em;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .jumbotron__matrix .pill {
+    display: inline-block;
+    background: gray;
+    border: 0.3em solid lightgray;
+    font-size: 1rem;
+    font-family: monospace;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    min-width: 6rem;
+    margin: 3em;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .jumbotron__matrix .blue {
+    background: linear-gradient(skyblue, blue, black, black, darkblue);
+    border-color: darkblue;
+    color: lightblue;
+  }
+
+  .jumbotron__matrix .blue:hover {
+    border-color: blue;
+    color: white;
+  }
+
+  .jumbotron__matrix .red {
+    background: linear-gradient(lightpink, crimson, black, black, darkred);
+    border-color: darkred;
+    color: lightpink;
+  }
+
+  .jumbotron__matrix .red:hover {
+    border-color: crimson;
+    color: white;
+  }
+</style>

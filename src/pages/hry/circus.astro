@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'circus')
+---
+
+<Layout class="game">
+  <Jumbotron title={currGame.title} class="zoomy" image="circus" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Competitive sci-fi RPG dungeon crawler card game. Available for download, print and play under <a href="/licence/">CC BY-NC-ND license</a>.
+        ZIP archive (36 MB) contains 2 PDFs with cards, game rules and instruction for print.
+      </p>
+      <div class="game__download-wrap">
+        <a href="/games/circus.zip" class="button button--download">Download</a>
+        <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" class="button button--order">Order</a>
+      </div>
+
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>More about the Game</h2>
+      <p>
+        Survive in crazy labyrinth! As a trashed-out robot or degenerated mutant you have to get through bunch of savage monsters and malicious traps. Get the fame and love of simple-minded consumerist fans and become the champion of Cyborg Mutant Zombie Circus arena. The prize for the winner is the ultimate challenge – become official human.
+      </p>
+      <p>
+      Originally as just a Christmas present for couple closest friends the Cyborg Mutant Zombie Circus recevied outstandingly positive feedback, won the Czech Board Games authors’ competition and received proffesional graphics and illustrations. Now it is officialy available to print and play. Enjoy the game!
+      </p>
+      <h2>Acknowledgement</h2>
+      <p>
+      For current state of the Cyborg Mutant Zombie Circus we are grateful to the intensive testing and feedback of many fans and colleagues. Many thanks and appreciations to Jolanka, Web Pro team, Czech Board Games and others who participated on it. Author of the card design and illustrations is Ondřej Šulák.
+      </p>
+    </div>
+  </section>
+</Layout>

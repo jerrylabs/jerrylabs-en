@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'supertrooper')
+---
+<Layout class="game">
+  <Jumbotron title={currGame.title} class="zoomy" image="supertrooper" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Unfortunately this game is currently available only in Czech language except latest standalone expansion <a href="/games/finalconflict">Super Trooper: Final Conflict</a>.
+      </p>
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>More about the Game</h2>
+      <p>
+      Life is tough especially in parallel universe. Just couple of humans is living in so-called freedom outside of ideological dictatorship of the corporations.
+      </p>
+      <p>
+        Players are representing warlords in mutual war conflict. Each player has their own deck of cards including warriors, gear and other special cards.
+        As a warlord you have to defend your territory guarded for generations, mine the resources and secure the safety of your people.
+      </p>
+      <h2>History and future</h2>
+      <p>
+        The origins of the Super Trooper begin in early 90’s based with the motive based on legendary trading card game Doomtrooper. Since then more than 2000 cards and tens of decks were created. Currently, the story of Super Trooper concludes in newest standalone expansion <a href="/games/finalconflict">Final Conflict</a>.
+      </p>
+      <p>
+        By donating to the JerryLabs you can help us to translate the game to the English, create new decks and digitalize the game.
+      </p>
+      <h2>Acknowledgement</h2>
+      <p>
+        Special thanks belongs to David Sosna a David „Bedya“ Sobala who had significant share on creating and development of the game. Big thanks also to everybody else, who participated on the evolution of the cards until current state.
+      </p>
+    </div>
+  </section>
+</Layout>

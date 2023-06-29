@@ -1,0 +1,142 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+const englishPath = currentPath
+  .replace('kontakt', 'contact')
+  .replace('hry', 'games')
+  .replace('weby', 'webs')
+  .replace('licence', 'license')
+---
+<header>
+    <div class="container">
+      <div class="header__homelink">
+        <a href="/" class="logo">
+          <img src="/images/logo-jerrylabs-white.png" alt="Logo" data-pin-nopin="true" />
+        </a>
+        <a href="/" class="textlogo">
+          JerryLabs
+          <div class="textlogo__name">Ing. Jaroslav Kameň</div>
+        </a>
+      </div>
+      <nav>
+        <ul class="header__navigation">
+          <li>
+            <a href="/hry" class={currentPath === "hry" ? "selected" : ""}>
+              <span>Hry</span>
+            </a>
+          </li>
+          <li>
+            <a href="/weby" class={currentPath === "weby" ? "selected" : ""}>
+              <span>Weby</span>
+            </a>
+          </li>
+          <li>
+            <a href="/kontakt" class={currentPath === "kontakty" ? "selected" : ""}>
+              <span>Kontakt</span>
+            </a>
+          </li>
+          <li>
+            <a href={`http://www.jerrylabsgames.com/${englishPath}`} title="English version" class="localization">
+              <img src="/images/uk_flag.svg" alt="English version" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-icon">
+          <img src="/images/cross.svg" alt="Menu" />
+          <img src="/images/menu.svg" alt="Menu" />
+      </button>
+    </div>
+  </header>
+
+<script>
+    const menuButton = document.querySelector('.mobile-menu-icon')
+    const menu = document.querySelector(('.header__navigation'))
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('expanded')
+        menuButton.classList.toggle('expanded')
+    })
+</script>
+
+<style>
+  header {
+    background-color: MidnightBlue;
+    color: white;
+    min-height: 4.375rem;
+    background-image: linear-gradient(#00004B 0%, #191970 50%, #00004B 100%);
+    z-index: 1;
+    position: relative;
+  }
+  a, a:hover { color: white; text-decoration: none; }
+
+  .header__navigation {
+      margin: 0; padding: 0; list-style: none;
+      line-height: 3.125rem; float: right;
+  }
+  li { float: left; }
+  li a { height: 100%; padding: 0.625rem 2rem; display: block; }
+  @media (max-width: 600px) { li a { padding: 0.625rem 1rem; } }
+  @media (max-width: 480px) { li a { padding: 0.625rem 0.5rem; } }
+  li a:hover, li a.selected { padding-bottom: calc(0.625rem - 5px); border-bottom: 5px solid rgba(240, 128, 128, 0.7); }
+  li a.selected { border-color: LightCoral; }
+  li a img {
+    height: 2rem; width: 2rem; vertical-align: middle;
+    border-radius: 2rem; box-shadow: 0 0 0.5rem white;
+  }
+
+  .header__homelink {
+    line-height: 3.125rem; height: 3.125rem; display: block;
+    float: left; padding: 0.625rem 0;
+  }
+  .header__homelink a { float: left; height: 3.125rem; }
+
+  .logo { margin-right: 0.625rem; line-height: 3.125rem; }
+  .logo img { height: 3.125rem; }
+  @media (max-width: 480px) { .logo img {height: 2rem; vertical-align: middle; } }
+
+  .textlogo {
+    display: flex; flex-direction: column; justify-content: center;
+    line-height: 1; font-size: 1.5rem;
+  }
+
+  .textlogo__name { font-size: 48%; }
+  .mobile-menu-icon { display: none; }
+
+  @media (max-width: 380px) {
+    .header__navigation {
+      position: fixed; top: 0px; right: -15rem;
+      z-index: 1; text-align: left;
+      width: 14rem; padding: 2.2rem 0 0.5rem;
+      transition: right 0.5s ease 0s;
+      background-color: MidnightBlue;
+      background-image: linear-gradient(#00004B 0%, #191970 50%, #00004B 100%);
+    }
+    .header__navigation a { padding: 0.625rem 2rem; }
+    .header__navigation a.selected, .header__navigation a:hover {
+      padding-bottom: 0.625rem; padding-left: calc(2rem - 5px);
+      border-bottom: none; border-left: 5px solid rgba(240, 128, 128, 0.7);
+    }
+    .header__navigation a.selected { border-color: LightCoral; }
+    .mobile-menu-icon {
+      display: block; float: right; height: 4.375rem; width: 4.375rem;
+      padding: 1.2rem; margin-right: -1rem;
+      position: relative; z-index: 1;
+      cursor: pointer;
+    }
+    .mobile-menu-icon img { height: 100%; }
+    .mobile-menu-icon:not(.expanded) img:first-of-type { display: none; }
+    .mobile-menu-icon.expanded img:nth-of-type(2) { display: none; }
+
+    .header__navigation.expanded { right: 0; }
+    .header__navigation.expanded li { float: none; }
+  }
+
+  @media (min-width: 381px) {
+    .header__navigation a.localization {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+  }
+
+
+</style>
