@@ -23,7 +23,7 @@
     "endorsement": "Steal cars, run from the cops, crash and shoot your rivals to fulfill deals for mafia bosses and rake in the big bucks!",
     "description": "An action card game charting the life of a car dealer in the city of Gangsterburg. From delivering pizzas to robbing banks, and watch out for the cops!",
     "tags": ["competetive", "action", "gangsters", "mafia"],
-    "images": ["cover.png", "game.jpg", "cards.jpg", "figures.jpg"]
+    "images": ["cover.png", "content.jpeg", "game.jpg", "cards.jpg", "figures.jpg"]
   }, {
     "title": "Cyborg Mutant Zombie Circus",
     "codeName": "circus",
