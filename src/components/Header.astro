@@ -1,7 +1,7 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
-const englishPath = currentPath
+const czechPath = currentPath
   .replace('contact', 'kontakt')
   .replace('games', 'hry')
   .replace('webs', 'weby')
@@ -21,23 +21,23 @@ const englishPath = currentPath
       <nav>
         <ul class="header__navigation">
           <li>
-            <a href="/hry" class={currentPath === "hry" ? "selected" : ""}>
-              <span>Hry</span>
+            <a href="/games" class={currentPath === "hry" ? "selected" : ""}>
+              <span>Games</span>
             </a>
           </li>
           <li>
-            <a href="/weby" class={currentPath === "weby" ? "selected" : ""}>
-              <span>Weby</span>
+            <a href="/webs" class={currentPath === "weby" ? "selected" : ""}>
+              <span>Webs</span>
             </a>
           </li>
           <li>
-            <a href="/kontakt" class={currentPath === "kontakty" ? "selected" : ""}>
-              <span>Kontakt</span>
+            <a href="/contact" class={currentPath === "kontakty" ? "selected" : ""}>
+              <span>Contact</span>
             </a>
           </li>
           <li>
-            <a href={`http://www.jerrylabsgames.com/${englishPath}`} title="English version" class="localization">
-              <img src="/images/uk_flag.svg" alt="English version" />
+            <a href={`http://www.jerrylabs.cz/${czechPath}`} title="Czech version" class="localization">
+              <img src="/images/cz_flag.svg" alt="Czech version" />
             </a>
           </li>
         </ul>
