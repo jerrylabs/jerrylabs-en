@@ -20,7 +20,7 @@ import games from '../data/hry.json'
         <div class="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
         <div class="card__content">
           <h3 class="card__title">{game.title}</h3>
-          <p class="card__description brief">For {game.players} players from {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
+          <p class="card__description brief">For {game.players} players {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
           <div class="card__description">{game.description}</div>
         </div>
       </a>
