@@ -5,15 +5,15 @@ const { game } = Astro.props;
   <div class="gameInfo__fields">
     <div class="gameInfo__field">
       <div class="gameInfo__value"><span role="img" aria-labelledby="lblPls">👪</span> {game.players}</div>
-      <div class="gameInfo__label" id="lblPls">Počet hráčů</div>
+      <div class="gameInfo__label" id="lblPls">Players</div>
     </div>
     <div class="gameInfo__field">
       <div class="gameInfo__value"><span role="img" aria-labelledby="lblTime">⏰</span> {game.time}</div>
-      <div class="gameInfo__label" id="lblTime">Délka hry</div>
+      <div class="gameInfo__label" id="lblTime">Game length</div>
     </div>
     <div class="gameInfo__field">
       <div class="gameInfo__value"><span role="img" aria-labelledby="lblAge">👶</span> {game.age}</div>
-      <div class="gameInfo__label" id="lblAge">Věk</div>
+      <div class="gameInfo__label" id="lblAge">Age</div>
     </div>
   </div>
 
