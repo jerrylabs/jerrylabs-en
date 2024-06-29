@@ -23,7 +23,7 @@ import games from '../data/hry.json'
       {games.slice(0, 3).map((game, i) => (
         <a
           class={`card card--horizontal card--half${game?.status ? ` label ${game.status}` : ''}`}
-          data-attribute="SRL" href={`/hry/${game.codeName}`} title={game.title}
+          data-attribute="SRL" href={`/games/${game.codeName}`} title={game.title}
         >
           <div class="card__image" style={`background-image: url('/images/${game.codeName}.jpg')`} />
           <div class="card__content">
