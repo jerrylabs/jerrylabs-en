@@ -25,7 +25,7 @@ const { game } = Astro.props;
 
   {!!game.images?.length && (
     <>
-      <h2>Galerie</h2>
+      <h2>Gallery</h2>
       <div class="gameInfo__gallery">
         {game.images.map((image, i) => (
           <a href={`/images/games/${game.codeName}/${image}`}

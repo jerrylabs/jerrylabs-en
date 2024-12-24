@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'truel')
+---
+<Layout class="game">
+  <Jumbotron title={currGame.title} className="zoomy" image="games/truel/board" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        The game is freely distributable under a <a href="/license/">Creative Commons license</a>.
+        ZIP archive (11 MB) contains rules and PDF with cards and tokens. You can download and print the game here or <a href="https://en.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">order the production form us</a>.</p>
+       </p>
+      <div class="game__download-wrap">
+        <a href="/games/truel.zip" class="button button--download">Download</a>
+        <a href="https://en.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" class="button button--order">Order</a>
+      </div>
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>More about the game</h2>
+      <p>
+        The concept for the game was conceived almost 20 years ago and this year it has been refined, fine-tuned and tested. Each player plays as a piece of one colour, trying to circle the game board to get gems.
+      </p>
+      <p>
+        There are no dice in the game; all game changes are made by assembling trios of cards. Each player lays out one card in their turn, and once the entire trio is completed, its effect on the game is evaluated.
+      </p>
+      <p>
+        Thus, the movement of pieces, the addition of extra cards, or even the gain or loss of gems depends on how the players put the trio together.
+      </p>
+      <h2>Acknowledgements</h2>
+      <p>
+        Thanks especially to Jolance and Andy C. for final testing and debugging the final game 🙏❤️
+      </p>
+    </div>
+  </section>
+</Layout>

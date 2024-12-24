@@ -1,5 +1,17 @@
 [
   {
+    "title": "Truel",
+    "codeName": "truel",
+    "players": "3",
+    "time": "33 minutes",
+    "age": "from 3 years",
+    "publishYear": "2024",
+    "endorsement": "An abstract puzzle game in which the first player to collect gems of 3 different colours wins.",
+    "description": "Symmetrical abstract board game for three players. Three pieces of three suits move on the game board by stacking triplets of cards, and the first player to collect gems of 3 different suits wins. The game contains 3 pieces, 3×3 tokens and 3×3×3+3×3 cards.",
+    "tags": ["competetive", "abstract", "logic"],
+    "images": ["box.jpg", "board.jpg"],
+    "status": "new"
+  }, {
     "title": "Final Conflict",
     "codeName": "finalconflict",
     "players": "2",
@@ -10,8 +22,7 @@
     "description": "The culmination of the long-running Super Trooper card series in the form of a standalone expansion with improved rules.",
     "tags": ["competetive", "action", "card", "sci-fi", "post-apocalyptic"],
     "images": [],
-    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/378351/super-trooper-final-conflict"},
-    "status": "comingsoon"
+    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/378351/super-trooper-final-conflict"}
   },
   {
     "title": "KTA: Krack That Auto!",
